@@ -38,6 +38,10 @@ docker buildx build --platform linux/amd64,linux/arm64 -t klerith/teslo-shop-cor
 
 
 # Mis notas 
+
+
+## Sección 6 Multi-Stage Build
+
 Recuerda que para subir debes estar logueado desde docker desktop en tu equipo y tener claro tu nombre de usuario.
 Id de usuario de Docker HUB
 juliocesarforero
