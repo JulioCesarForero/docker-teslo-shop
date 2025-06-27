@@ -124,6 +124,6 @@ PS C:\CursosUdemy\DockerGuiaPractica\docker-teslo-shop>
 
 al validarlo en docker hub tenemos:
 
-![DockerHub](ImagenesEvidencias\imageDockerHub.png)
+![DockerHub](https://github.com/JulioCesarForero/docker-teslo-shop/blob/final-seccion-6/ImagenesEvidencias/imageDockerHub.png)
 
 
