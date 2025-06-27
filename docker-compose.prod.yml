@@ -1,4 +1,4 @@
-version: '3'
+# version: '3'
 
 
 services:
@@ -10,7 +10,7 @@ services:
       target: ${STAGE}
       dockerfile: Dockerfile
     
-    image: klerith/teslo-shop-backend:2.5.0
+    image: juliocesarforero/teslo-shop-backend:2.0.0
     container_name: nest-app
     ports:
       - ${PORT}:${PORT}
