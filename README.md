@@ -131,3 +131,39 @@ al validarlo en docker hub tenemos:
 ![DockerHub](https://github.com/JulioCesarForero/docker-teslo-shop/blob/final-seccion-6/ImagenesEvidencias/imageDockerHub.png)
 
 
+## Sección 7 Deployments y Registros
+
+82. Para la contruccion de imagenes con multiples arquitecturas el comando a usar es :
+
+```
+docker buildx build --platform linux/amd64,linux/arm64 -t juliocesarforero/teslo-shop-backend:2.0.0 --push .
+```
+
+![Multiples Arquitecturas](ImagenesEvidencias\imageMultiplesArquitecturas.png)
+
+Dependiendo de diferentes factores en algunas ocaciones se recomienda hacerlo de manera separada 
+
+### Para AMD64
+docker buildx build --platform linux/amd64 -t juliocesarforero/teslo-shop-backend:2.0.0-amd64 --push .
+
+### Para ARM64  
+docker buildx build --platform linux/arm64 -t juliocesarforero/teslo-shop-backend:2.0.0-arm64 --push .
+
+### Crear manifest multi-plataforma
+docker buildx imagetools create -t juliocesarforero/teslo-shop-backend:2.0.0 \
+  juliocesarforero/teslo-shop-backend:2.0.0-amd64 \
+  juliocesarforero/teslo-shop-backend:2.0.0-arm64
+
+---
+
+85. 4:16min 
+
+se desarrolla el lab en el proyecto C:\CursosUdemy\DockerGuiaPractica\teslo-testing\docker-compose.yml
+
+
+86. Digital Ocean - Aprovicionamiento de Base de Datos
+87. Probar base de datos
+90. Desplegar la imagen directamente desde DockerHub
+
+--- 
+En digital ocean es necesario agregar TC y configurar la conexion del aprovisionamiento de la DB 
